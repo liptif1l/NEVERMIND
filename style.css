@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: yellow;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  display: flex; /* Використання Flexbox для розташування */
+  margin: 1rem;
+}
+
+section {
+  flex: 3; /* Основна частина */
+  margin-right: 1rem;
+}
+
+aside {
+  flex: 1; /* Бічна панель */
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
