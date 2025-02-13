@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація - Тату Арт</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body class="register-page">
+
+<header>
+    <div class="logo">
+        <h1>Тату Арт</h1>
+        <p>Ink that tells your story</p>
+    </div>
+</header>
+
+<main>
+    <section class="register-container">
+        <h2>Приєднуйся до нас!</h2>
+        <p>Заповни форму та стань частиною спільноти татуювальників.</p>
+
+        <form action="register_process.php" method="POST" class="register-form">
+            <label for="username">Ім'я користувача</label>
+            <input type="text" id="username" name="username" required placeholder="Введіть ваше ім'я">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" required placeholder="****">
+
+            <button type="submit">Зареєструватися</button>
+        </form>
+
+        <p class="login-link">Вже маєш акаунт? <a href="login.html">Увійти</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Тату Арт. Всі права захищені.</p>
+</footer>
+
+</body>
+</html>
