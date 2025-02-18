@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вхід - Тату Арт</title>
     <link rel="stylesheet" href="login.css">
 </head>
+
 <body class="login-page">
+    <header>
+        <div class="logo">
+            <h1>Тату Арт</h1>
+            <p>Ink that tells your story</p>
+        </div>
+    </header>
 
-<header>
-    <div class="logo">
-        <h1>Тату Арт</h1>
-        <p>Ink that tells your story</p>
-    </div>
-</header>
+    <main>
+        <section class="login-container">
+            <h2>Вхід до акаунту</h2>
+            <p>Введіть ваші дані, щоб продовжити.</p>
 
-<main>
-    <section class="login-container">
-        <h2>Вхід до акаунту</h2>
-        <p>Введіть ваші дані, щоб продовжити.</p>
+            <form action="login_process.php" method="POST" class="login-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="example@email.com">
 
-        <form action="login_process.php" method="POST" class="login-form">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="example@email.com">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required placeholder="****">
 
-            <label for="password">Пароль</label>
-            <input type="password" id="password" name="password" required placeholder="****">
+                <button type="submit">Увійти</button>
+            </form>
 
-            <button type="submit">Увійти</button>
-        </form>
+            <p class="register-link">Ще не маєш акаунту? <a href="register.html">Зареєструватися</a></p>
+        </section>
+    </main>
 
-        <p class="register-link">Ще не маєш акаунту? <a href="register.html">Зареєструватися</a></p>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2025 Тату Арт. Всі права захищені.</p>
-</footer>
+    <footer>
+        <p>&copy; 2025 Тату Арт. Всі права захищені.</p>
+    </footer>
 
 </body>
+
 </html>
