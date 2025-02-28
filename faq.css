@@ -1,0 +1,224 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: ui-monospace;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header .logo p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.faq-section {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    flex: 2;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#question-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#question-form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+#question-form textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    resize: vertical;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    color: #555;
+    min-height: 100px;
+    transition: border-color 0.3s ease;
+}
+
+#question-form textarea:focus {
+    border-color: #e74c3c;
+    outline: none;
+}
+
+#question-form button {
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    align-self: center;
+}
+
+#question-form button:hover {
+    background-color: #c0392b;
+}
+
+#questions-container {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+#questions-container h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.question {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.question p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.account-window {
+    flex: 1;
+    background: linear-gradient(135deg, #1e1e1e, #333);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.account-window:hover {
+    transform: scale(1.02);
+}
+
+.account-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #e74c3c;
+    transition: transform 0.3s;
+}
+
+.avatar img:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.user-info {
+    margin-top: 10px;
+}
+
+.user-info h3 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.user-info p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.account-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.account-actions button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.account-actions button:hover {
+    background: #ff5733;
+    transform: scale(1.05);
+}
