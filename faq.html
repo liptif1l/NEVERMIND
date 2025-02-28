@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тату Арт - FAQ</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Тату Арт</h1>
+            <p>Ink that tells your story</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">~home~</a></li>
+            <li><a href="artists.html">~artists~</a></li>
+            <li><a href="gallery.html">~gallery~</a></li>
+            <li><a href="designs.html">~designs~</a></li>
+            <li><a href="shop.html">~merch & apparel~</a></li>
+            <li><a href="pricing.html">~pricing~</a></li>
+            <li><a href="reviews.html">~reviews~</a></li>
+            <li><a href="contact.html">~contact~</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+        <section class="faq-section">
+            <h2>Питання та відповіді</h2>
+            <!-- Форма для відправки питань -->
+            <form id="question-form">
+                <label for="question-input">Задайте своє питання:</label>
+                <textarea id="question-input" placeholder="Напишіть своє питання тут..." required></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+
+            <div id="questions-container">
+                <h3>Всі питання:</h3>
+                <!-- Тут будуть з'являтися всі питання -->
+            </div>
+        </section>
+
+        <aside class="account-window">
+            <div class="account-box">
+                <div class="avatar">
+                    <img src="default-avatar.png" alt="Аватар" id="user-avatar">
+                </div>
+                <div class="user-info">
+                    <h3 id="user-nickname">Гість</h3>
+                    <p id="user-email">Ви не увійшли</p>
+                </div>
+                <div class="account-actions">
+                    <button onclick="document.location='login.html'">🔑 Вхід</button>
+                    <button onclick="document.location='register.html'">📝 Реєстрація</button>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Тату Арт. Всі права захищені.</p>
+    </footer>
+
+    <script src="faq.js"></script>
+</body>
+
+</html>
