@@ -57,13 +57,6 @@ nav ul li a:hover {
 /* Основний контент */
 main {
     padding: 2rem;
-    flex: 1;
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 .intro h2 {
@@ -76,6 +69,114 @@ main {
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
+}
+/* Контейнер для головного контенту та акаунта */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Основний контент */
+.intro {
+    flex: 2;
+    max-width: 60%;
+}
+
+/* Вікно акаунта */
+.account-window {
+    flex: 1;
+    max-width: 30%;
+    background: linear-gradient(135deg, #1e1e1e, #333);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.account-window:hover {
+    transform: scale(1.02);
+}
+
+/* Блок акаунта */
+.account-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Аватар користувача */
+.avatar img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #e74c3c;
+    transition: transform 0.3s;
+}
+
+.avatar img:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+/* Інформація користувача */
+.user-info {
+    margin-top: 10px;
+}
+
+.user-info h3 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.user-info p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Кнопки */
+.account-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.account-actions button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.account-actions button:hover {
+    background: #ff5733;
+    transform: scale(1.05);
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro, .account-window {
+        max-width: 100%;
+    }
+
+    .account-actions {
+        flex-direction: column;
+    }
 }
 
 .image-gallery {
