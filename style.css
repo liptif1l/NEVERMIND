@@ -211,12 +211,16 @@ main {
     cursor: pointer;
 }
 
-/* Футер */
 footer {
-    background-color: #1a1a1a;
-    color: white;
+    background: #111;
     text-align: center;
-    padding: 1rem;
+    padding: 20px;
+}
+
+.socials a {
+    color: #e74c3c;
+    text-decoration: none;
+}
 }
 
 /* Адаптивність для мобільних */
